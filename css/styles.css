@@ -93,6 +93,7 @@ button {
     letter-spacing: 0.02em;
     position: relative;
     padding: 24px 0;
+    transition: color 250ms ease-out;
 }
 
 .header-home-nav-link::after {
@@ -132,6 +133,7 @@ button {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms ease-out;
 }
 
 .header-address-link:hover,
@@ -179,7 +181,7 @@ button {
     padding: 16px 32px;
     min-width: 169px;
     margin: 0 auto;
-    
+    transition: color 250ms ease-out;
 }
 
 .hero-button:hover,
@@ -203,6 +205,32 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.advantages-icons-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+.advantages-icons-item-div {
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+}
+
+.advantages-icons-item {
+    width: 100%;
+}
+
+.advantages-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .advantages-list {
@@ -310,6 +338,18 @@ button {
     margin-bottom: 8px;
 }
 
+.our-team-list-text {
+    margin-bottom: 8px;
+}
+
+.our-team-icons-list {
+    display: flex;
+    gap: 24;
+}
+
+.our-team-icons-item {
+    width: 100%;
+}
 
 /* Footer */
 .footer {
