@@ -53,6 +53,7 @@ button {
 /* Header */
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -93,7 +94,7 @@ button {
     letter-spacing: 0.02em;
     position: relative;
     padding: 24px 0;
-    transition: color 250ms ease-out;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-home-nav-link::after {
@@ -105,6 +106,8 @@ button {
     height: 4px;
     border-radius: 2px;
     background-color:#404BBF;
+    left: 0;
+    bottom: -1px;
 }
 
 .header-home-nav-link:hover,
@@ -133,7 +136,7 @@ button {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    transition: color 250ms ease-out;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)t;
 }
 
 .header-address-link:hover,
@@ -154,7 +157,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -181,7 +184,7 @@ button {
     padding: 16px 32px;
     min-width: 169px;
     margin: 0 auto;
-    transition: color 250ms ease-out;
+    transition: backgrund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -220,17 +223,14 @@ button {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
 }
 
 .advantages-icons-item {
     width: 100%;
-}
-
-.advantages-icon {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .advantages-list {
@@ -275,6 +275,7 @@ button {
 .our-team-list-item {
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-list-container {
